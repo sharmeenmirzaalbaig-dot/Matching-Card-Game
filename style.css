@@ -67,7 +67,7 @@ a {
   text-shadow: 0 0 5px #5f719e, 0 0 10px #5f719e, 0 0 20px #5f719e,
     0 0 40px white, 0 0 80px white;
 }
-/* .board {
+.board {
   display: grid;
   grid-template-columns: repeat(4, 120px);
   grid-template-rows: repeat(4, 120px);
@@ -76,8 +76,7 @@ a {
   justify-content: center;
   max-height: 200px;
 }
-
-.card {
+*/ .card {
   background-color: #7f8caa;
   border-radius: 5px;
 
@@ -113,10 +112,9 @@ a {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   width: 100%;
-  /* height: 100%; */
-} */
+}
 
-/* .card-back {
+.card-back {
   transform: rotateY(180deg);
   background-color: #7f8caa;
 }
@@ -138,7 +136,7 @@ a {
   opacity: 0.6;
 }
 
-.restart {
+/* .restart {
   padding: 8px;
   font-size: 20px;
   background-color: #5f719e;
@@ -161,13 +159,12 @@ a {
   cursor: pointer;
   font-family: "Eater", serif;
   animation: 2s linear infinite blink;
-}
-
+} */
 .status {
   font-family: "Eater", serif;
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: center;
+
+  align-items: center;
   justify-content: center;
   gap: 35px;
   font-size: 25px;
@@ -176,28 +173,25 @@ a {
   text-shadow: 0 0 5px gray, 0 0 10px gray, 0 0 20px gray, 0 0 40px gray,
     0 0 80px gray;
 }
-#game-over {
+/* #game-over {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #7f8caa;
-  /* border: 2px solid #333; */
-  /* padding: 2rem;
+
+  padding: 2rem;
   z-index: 1000;
   display: none;
   text-align: center;
   box-shadow: 0 0 20px white;
-}
+} */
 
-#game-over.hidden {
+/* #game-over.show {
+  display: block;
   background-color: #7f8caa;
 }
-#game-over.show {
-  display: block;
-  background-color: #7f8caa; */
-}
-/* h4 {
+h4 {
   font-size: 20px;
   justify-content: center;
   font-family: "Eater", serif;
@@ -210,13 +204,13 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #7f8caa;
-  /* border: 2px solid #333; */
-  /* padding: 2rem;
+
+  padding: 2rem;
   z-index: 1000;
   display: none;
   text-align: center;
-  box-shadow: 0 0 20px white; */
+  box-shadow: 0 0 20px white;
 }
-/* #game-won.show {
+#game-won.show {
   display: block;
-} */ */ */ */ */
+} */
