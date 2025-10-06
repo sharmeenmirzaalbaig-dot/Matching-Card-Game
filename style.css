@@ -136,7 +136,7 @@ a {
   opacity: 0.6;
 }
 
-/* .restart {
+.restart {
   padding: 8px;
   font-size: 20px;
   background-color: #5f719e;
@@ -159,7 +159,7 @@ a {
   cursor: pointer;
   font-family: "Eater", serif;
   animation: 2s linear infinite blink;
-} */
+}
 .status {
   font-family: "Eater", serif;
   display: flex;
@@ -173,7 +173,7 @@ a {
   text-shadow: 0 0 5px gray, 0 0 10px gray, 0 0 20px gray, 0 0 40px gray,
     0 0 80px gray;
 }
-/* #game-over {
+#game-over {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -185,9 +185,9 @@ a {
   display: none;
   text-align: center;
   box-shadow: 0 0 20px white;
-} */
+}
 
-/* #game-over.show {
+#game-over.show {
   display: block;
   background-color: #7f8caa;
 }
@@ -213,4 +213,4 @@ h4 {
 }
 #game-won.show {
   display: block;
-} */
+}
