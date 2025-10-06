@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-header {
+/* header {
   margin-top: 50px;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@ a {
   /* height: 100%; */
 }
 
-.card-back {
+/* .card-back {
   transform: rotateY(180deg);
   background-color: #7f8caa;
 }
@@ -167,7 +167,7 @@ a {
   font-family: "Eater", serif;
   display: flex;
   /* flex-direction: row; */
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
   gap: 35px;
   font-size: 25px;
@@ -183,7 +183,7 @@ a {
   transform: translate(-50%, -50%);
   background: #7f8caa;
   /* border: 2px solid #333; */
-  padding: 2rem;
+  /* padding: 2rem;
   z-index: 1000;
   display: none;
   text-align: center;
@@ -195,9 +195,9 @@ a {
 }
 #game-over.show {
   display: block;
-  background-color: #7f8caa;
+  background-color: #7f8caa; */
 }
-h4 {
+/* h4 {
   font-size: 20px;
   justify-content: center;
   font-family: "Eater", serif;
@@ -211,12 +211,12 @@ h4 {
   transform: translate(-50%, -50%);
   background: #7f8caa;
   /* border: 2px solid #333; */
-  padding: 2rem;
+  /* padding: 2rem;
   z-index: 1000;
   display: none;
   text-align: center;
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px white; */
 }
-#game-won.show {
+/* #game-won.show {
   display: block;
-}
+} */ */ */ */ */
