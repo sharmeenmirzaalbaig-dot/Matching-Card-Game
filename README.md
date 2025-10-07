@@ -7,6 +7,7 @@ This project will be about Matching-Card game. Its harry potter themed.
 It will challenge your memory. Its a 4x4 card board which contain 8 pairs of emojis.
 
  You need to match all pairs before the timer runs out within 60 seconds.
+
  ![ops](https://media.tenor.com/_1j1R0YQLBYAAAAM/panic-why.gif)
 
  There will be a moves counter as well which counts each move.
