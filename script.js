@@ -37,17 +37,17 @@ const shuffleEmojis = (array) => {
 }
 // **********************************************************************************
 // assign the emojis
-// const assignEmojis = (shuffled) => {
-//   for (let i = 0; i < gameCards.length; i++) {
-//     //emojis will be assigned to the back of the card
-//     const back = gameCards[i].querySelector(".card-back")
+const assignEmojis = (shuffled) => {
+  for (let i = 0; i < gameCards.length; i++) {
+    //emojis will be assigned to the back of the card
+    const back = gameCards[i].querySelector(".card-back")
 
-//     back.textContent = shuffled[i] //shuffled emojis will be displayed
-//   }
-// }
-// // startGame by shuffling the cards and assigning them
-// const shuffled = shuffleEmojis(gameEmojis)
-// assignEmojis(shuffled)
+    back.textContent = shuffled[i] //shuffled emojis will be displayed
+  }
+}
+// startGame by shuffling the cards and assigning them
+const shuffled = shuffleEmojis(gameEmojis)
+assignEmojis(shuffled)
 // // **********************************************************************************
 //function to update the timer
 
