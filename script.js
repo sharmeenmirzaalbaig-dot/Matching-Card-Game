@@ -130,30 +130,30 @@ gameCards.forEach((card, i) =>
 )
 // ******************************************************************************
 //calling click function for the reset
-// resetButton.forEach((reset, i) =>
-//   reset.addEventListener("click", () => {
-//     moves = 0 //reset moves
-//     seconds = 0 //reset seconds
-//     timeStarted = false //reset the timer flag
-//     clearInterval(timer) //stop running timer
-//     cardBoard = [] //clear the flipped cards
-//     matchedCards = [] //clear the matched cards
-//     gameEnded = false //reset game status
+resetButton.forEach((reset, i) =>
+  reset.addEventListener("click", () => {
+    moves = 0 //reset moves
+    seconds = 0 //reset seconds
+    timeStarted = false //reset the timer flag
+    clearInterval(timer) //stop running timer
+    cardBoard = [] //clear the flipped cards
+    matchedCards = [] //clear the matched cards
+    gameEnded = false //reset game status
 
-//     gameMoves.textContent = moves //reset the moves in my html
-//     gameTime.textContent = seconds //reset the moves in my html
-//     //this will hide the game-over and game-won box and ensure it back to hidden
-//     document.getElementById("game-over").classList.remove("show")
-//     document.getElementById("game-over").classList.add("hidden")
-//     document.getElementById("game-won").classList.remove("show")
-//     document.getElementById("game-won").classList.add("hidden")
+    gameMoves.textContent = moves //reset the moves in my html
+    gameTime.textContent = seconds //reset the moves in my html
+    //this will hide the game-over and game-won box and ensure it back to hidden
+    document.getElementById("game-over").classList.remove("show")
+    document.getElementById("game-over").classList.add("hidden")
+    document.getElementById("game-won").classList.remove("show")
+    document.getElementById("game-won").classList.add("hidden")
 
-//     gameCards.forEach((card) => {
-//       card.classList.remove("flipped", "matched") // reset the cards visual state
-//     })
-//     const shuffled = shuffleEmojis(gameEmojis) //reshuffle emojis again for the new game
-//     assignEmojis(shuffled) //reassign the emojis to cards
-//   })
-// )
-//
+    gameCards.forEach((card) => {
+      card.classList.remove("flipped", "matched") // reset the cards visual state
+    })
+    const shuffled = shuffleEmojis(gameEmojis) //reshuffle emojis again for the new game
+    assignEmojis(shuffled) //reassign the emojis to cards
+  })
+)
+
 // ***************************************************************************8
