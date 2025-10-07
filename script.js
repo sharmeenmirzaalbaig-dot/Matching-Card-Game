@@ -67,66 +67,67 @@ const timeUpdate = () => {
 // **********************************************************************************
 // Event Handler
 //calling click function for cards and adding event handler
-// gameCards.forEach((card, i) =>
-//   card.addEventListener("click", () => {
-//     if (
-//       gameEnded || //if game ended don't allow to click further
-//       card.classList.contains("flipped") || //it won't allow to click already flipped cards
-//       card.classList.contains("matched") || //it won't allow to click already matched cards
-//       cardBoard.length === 2 // only 2 cards will be flipped at same time
-//     ) {
-//       return
-//     }
-//     // **************************************
-//     // the timer didn't started yet
-//     if (!timeStarted) {
-//       //timer will start once clicked on the card
-//       timeStarted = true
-//       timer = setInterval(timeUpdate, 1000) //starts the timer
-//     }
-// ***************************************
-//this increase with each click
-// moves++
-// gameMoves.innerHTML = moves //updates the moves display in html
-// ***************************************
-// matching the cards
-// card.classList.add("flipped") //this will flip the clicked cards
-// cardBoard.push(card) //pushes the card in the flipped card lists
-// ***************************************
-// if (cardBoard.length === 2) {
-//   // when two cards will be clicked and flipped it will be stored in cardBoard
-//   const [card1, card2] = cardBoard
-//   const emoji1 = card1.querySelector(".card-back").innerText //get emoji from card 1
-//   const emoji2 = card2.querySelector(".card-back").innerText //get emoji from card 2
-// ***************************************
-// if (emoji1 === emoji2) {
-//   //if both card matched
-//   card1.classList.add("matched") //mark card 1 as matched
-//   card2.classList.add("matched") //mark card 2 as matched
-//   matchedCards.push(card1, card2) // add to matched list
-//   cardBoard = [] //clear the flipped cards
-// ***************************************
-// if (matchedCards.length === gameCards.length) {
-//   //if all the cards matched
-//   clearInterval(timer) //stop the timer
-//   gameEnded = true //end the game
-//   setTimeout(() => {
-//     const winMes = winBox.querySelector("h4")
-//     winMes.textContent = `🎉 You Won in ${moves} moves!`
-//     winBox.classList.add("show") //show win message after delay of 5ms
-//   }, 500)
-// }
-//       } else {
-//         //if cards don't matched flip the cards back
-//         setTimeout(() => {
-//           card1.classList.remove("flipped")
-//           card2.classList.remove("flipped")
-//           cardBoard = [] // clear cardBoard list storing the flipped cards
-//         }, 1000) //delay before flipping back is 1 sec
-//       }
-//     }
-//   })
-// )
+gameCards.forEach((card, i) =>
+  card.addEventListener("click", () => {
+    if (
+      gameEnded || //if game ended don't allow to click further
+      card.classList.contains("flipped") || //it won't allow to click already flipped cards
+      card.classList.contains("matched") || //it won't allow to click already matched cards
+      cardBoard.length === 2 // only 2 cards will be flipped at same time
+    ) {
+      return
+    }
+    // **************************************
+    // the timer didn't started yet
+    if (!timeStarted) {
+      //timer will start once clicked on the card
+      timeStarted = true
+      timer = setInterval(timeUpdate, 1000) //starts the timer
+    }
+
+    // ***************************************
+    //this increase with each click
+    moves++
+    gameMoves.innerHTML = moves //updates the moves display in html
+    // ***************************************
+    // matching the cards
+    card.classList.add("flipped") //this will flip the clicked cards
+    cardBoard.push(card) //pushes the card in the flipped card lists
+    // ***************************************
+    if (cardBoard.length === 2) {
+      // when two cards will be clicked and flipped it will be stored in cardBoard
+      const [card1, card2] = cardBoard
+      const emoji1 = card1.querySelector(".card-back").innerText //get emoji from card 1
+      const emoji2 = card2.querySelector(".card-back").innerText //get emoji from card 2
+      // ***************************************
+      if (emoji1 === emoji2) {
+        //if both card matched
+        card1.classList.add("matched") //mark card 1 as matched
+        card2.classList.add("matched") //mark card 2 as matched
+        matchedCards.push(card1, card2) // add to matched list
+        cardBoard = [] //clear the flipped cards
+        // ***************************************
+        if (matchedCards.length === gameCards.length) {
+          //if all the cards matched
+          clearInterval(timer) //stop the timer
+          gameEnded = true //end the game
+          setTimeout(() => {
+            const winMes = winBox.querySelector("h4")
+            winMes.textContent = `🎉 You Won in ${moves} moves!`
+            winBox.classList.add("show") //show win message after delay of 5ms
+          }, 500)
+        }
+      } else {
+        //if cards don't matched flip the cards back
+        setTimeout(() => {
+          card1.classList.remove("flipped")
+          card2.classList.remove("flipped")
+          cardBoard = [] // clear cardBoard list storing the flipped cards
+        }, 1000) //delay before flipping back is 1 sec
+      }
+    }
+  })
+)
 // ******************************************************************************
 //calling click function for the reset
 // resetButton.forEach((reset, i) =>
