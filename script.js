@@ -26,15 +26,15 @@ let timer = 0 //holds setInterval
 let gameEnded = false //the game is still not over
 // **********************************************************************************
 // shuffle the emojis using fisher-Yates algorithm
-// const shuffleEmojis = (array) => {
-//   const emojis = [...array] //using spread operator to create a copy to avoid mutating original copy
-//   for (let i = emojis.length - 1; i > 0; i--) {
-//     // starts from the last element
-//     const j = Math.floor(Math.random() * (i + 1)) //picks random index
-//     ;[emojis[i], emojis[j]] = [emojis[j], emojis[i]] //swaps the element with random index
-//   }
-//   return emojis //return the shuffled array of emojis
-// }
+const shuffleEmojis = (array) => {
+  const emojis = [...array] //using spread operator to create a copy to avoid mutating original copy
+  for (let i = emojis.length - 1; i > 0; i--) {
+    // starts from the last element
+    const j = Math.floor(Math.random() * (i + 1)) //picks random index
+    ;[emojis[i], emojis[j]] = [emojis[j], emojis[i]] //swaps the element with random index
+  }
+  return emojis //return the shuffled array of emojis
+}
 // **********************************************************************************
 // assign the emojis
 // const assignEmojis = (shuffled) => {
