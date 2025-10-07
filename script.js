@@ -17,13 +17,13 @@ const gameOver = document.getElementById("game-over") // this will select the ga
 // **********************************************************************************
 
 // Game State variables
-// let cardBoard = [] //holds the two flipped cards
-// let matchedCards = [] //keep track of matched cards
-// let moves = 0 //moves will stay 0 until card clicked
-// let seconds = 0 // seconds are zero
-// let timeStarted = false // the initial state is false
-// let timer = 0 //holds setInterval
-// let gameEnded = false //the game is still not over
+let cardBoard = [] //holds the two flipped cards
+let matchedCards = [] //keep track of matched cards
+let moves = 0 //moves will stay 0 until card clicked
+let seconds = 0 // seconds are zero
+let timeStarted = false // the initial state is false
+let timer = 0 //holds setInterval
+let gameEnded = false //the game is still not over
 // **********************************************************************************
 // shuffle the emojis using fisher-Yates algorithm
 // const shuffleEmojis = (array) => {
