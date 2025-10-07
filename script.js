@@ -51,18 +51,18 @@ assignEmojis(shuffled)
 // // **********************************************************************************
 //function to update the timer
 
-// const timeUpdate = () => {
-//   seconds++ //this will increase sec
-//   gameTime.textContent = seconds //updates the time in the html
+const timeUpdate = () => {
+  seconds++ //this will increase sec
+  gameTime.textContent = seconds //updates the time in the html
 
-//   if (seconds >= 60) {
-//     //if the time reaches one mint which is equal to 60 sec the game will stop and show time's up sign
-//     clearInterval(timer) //this will stop the timer
-//     gameEnded = true // mark game as ended
+  if (seconds >= 60) {
+    //if the time reaches one mint which is equal to 60 sec the game will stop and show time's up sign
+    clearInterval(timer) //this will stop the timer
+    gameEnded = true // mark game as ended
 
-//     gameOver.classList.add("show") //display the game-over message
-//   }
-// }
+    gameOver.classList.add("show") //display the game-over message
+  }
+}
 
 // **********************************************************************************
 // Event Handler
