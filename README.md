@@ -17,11 +17,9 @@ Here is the link to play my game,
 
 [Play Game](http://my-matchingcard.surge.sh/)
 
-Best of Luck!
+## Best of Luck!
 
-![wink](https://64.media.tumblr.com/cdf78d4cf8a644ce2fa41e178a088ed9/038bd9c64cb63875-8b/s1280x1920/92498fb9493c2745400bf88143a7297417d1d85e.gif)
-
- ![ops](https://64.media.tumblr.com/cdf78d4cf8a644ce2fa41e178a088ed9/038bd9c64cb63875-8b/s1280x1920/92498fb9493c2745400bf88143a7297417d1d85e.gif)
+![wink](https://i.pinimg.com/originals/4c/b9/a6/4cb9a613021cd8f97496f99ad1cca2a5.gif)
 
 
 # Credits
